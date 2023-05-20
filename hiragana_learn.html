@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/src/css/index.css" />
+    <title>learn hiragana</title>
+  </head>
+  <body>
+    <main>
+        
+          <buttons>
+            <normal>
+              <button id="random_hiragana">random hiragana</button>
+              <button id="random_singular_vowel">random singular sound</button>
+              <button id="random_vowel_unions">random vowel unions</button>
+            </normal>
+            <charecter>
+              <button id="random_k_unions">k-unions</button>
+              <button id="random_s_unions">s-unions</button>
+              <button id="random_t_unions">t-unions</button>
+              <button id="random_n_unions">n-unions</button>
+              <button id="random_h_unions">h-unions</button>
+              <button id="random_m_unions">m-unions</button>
+              <button id="random_y_unions">y-unions</button>
+              <button id="random_r_unions">r-unions</button>
+              <button id="random_w_unions">w-unions</button>
+            </charecter>
+          </buttons>
+          <card>
+            <character id="character">あ</character>
+            <next id="next_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="var(--secondary-button)" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg>
+            </next>
+            <translation-learn id="translation">
+                a
+            </translation-learn>
+            
+          </card>
+      </main>
+      <script src="/src/scripts/hiragana_learn.js"></script>
+  </body>
+</html>
