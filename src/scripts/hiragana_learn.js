@@ -36,6 +36,7 @@ const characters = new Map();
 const body = document.getElementsByTagName('html');
 const character = document.getElementById('character');
 var now_type = "a";
+var prew_character = "あ"
 // singular_vowels.forEach((value, key) => {
 //     console.log(`${key} = ${value}`);
 //   });
@@ -46,11 +47,18 @@ function getRandom(info, name) {
     // Get an array of all the keys
     let keys = Array.from(Object.keys(info));
 
-    // Pick a random index from 0 to keys.length - 1
-    let randomIndex = Math.floor(Math.random() * keys.length);
+    while (true)
+    {
+        let randomIndex = Math.floor(Math.random() * keys.length);
 
-    // Get the key at that index
-    let randomKey = keys[randomIndex];
+        // Get the key at that index
+        var randomKey = keys[randomIndex];
+        if (randomKey != prew_character) 
+        {
+            prew_character = randomKey;
+            break;
+        }
+    }
 
     // Print the random key and its value
     // console.log(randomKey, info[randomKey]);

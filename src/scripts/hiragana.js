@@ -37,6 +37,7 @@ const body = document.getElementsByTagName('html');
 const score = document.getElementById('score');
 var score_n = 0;
 var score_w = 0;
+var prew_character = "あ";
 const character = document.getElementById('character');
 
 // singular_vowels.forEach((value, key) => {
@@ -50,10 +51,19 @@ function getRandom(info, name) {
     let keys = Array.from(Object.keys(info));
 
     // Pick a random index from 0 to keys.length - 1
-    let randomIndex = Math.floor(Math.random() * keys.length);
+    while (true)
+    {
+        let randomIndex = Math.floor(Math.random() * keys.length);
 
-    // Get the key at that index
-    let randomKey = keys[randomIndex];
+        // Get the key at that index
+        var randomKey = keys[randomIndex];
+        if (randomKey != prew_character) 
+        {
+            prew_character = randomKey;
+            break;
+        }
+    }
+    
 
     // Print the random key and its value
     // console.log(randomKey, info[randomKey]);
