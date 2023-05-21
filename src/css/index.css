@@ -76,14 +76,14 @@ normal {
     align-items: center;
     justify-content: center;
 }
-charecter{
+/* charecter{
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-}
+} */
 button {
     background-color: var(--primary-button);
     /* background: linear-gradient(120deg, var(--primary-button), var(--accent)); */
@@ -120,7 +120,9 @@ character {
     margin-right: auto;
     border-radius: 1rem;
     padding: 1rem;
-    background: linear-gradient(180deg, var(--primary-button), var(--accent));
+    background: linear-gradient(120deg, var(--primary-button), var(--accent));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
 }
 
 translations {
@@ -186,3 +188,53 @@ translation.learn {
     margin-left: -8rem;
     flex-flow: row wrap;
   }
+
+card-wraper {
+    display: flex;
+    flex-flow: row wrap;
+}
+card-wraper.vertical {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    margin-left: auto;
+    margin-right: auto; 
+}
+/* character.main-page {
+    background: linear-gradient(120deg, var(--primary-button), var(--accent));
+} */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+card_text {
+    background-color: var(--primary);
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: .5rem;
+    text-align-last: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 16px 0px rgba(0,0,0,0.25);
+}
+
+a.card {
+    background-color: var(--primary-button);
+    font-size: 2rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    border-radius: 1rem;
+    padding: .5rem;
+    margin-top: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    background: var(--primary-button);
+}
