@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="/src/css/index.css" />
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>learn hiragana</title>
-  </head>
-  <body>
-    <main>
-      <score id="score">0</score>
-        <buttons>
-          <normal>
-            <button id="random_hiragana">random hiragana</button>
-            <button id="random_singular_vowel">random singular sound</button>
-            <button id="random_vowel_unions">random vowel unions</button>
-          </normal>
-          <charecter>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" type="text/css" href="/src/css/index.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>learn hiragana</title>
+</head>
+
+<body>
+  <main>
+    <score id="score">0</score>
+    <buttons>
+      <normal>
+        <button id="random_hiragana">random hiragana</button>
+        <button id="random_singular_vowel">random singular sound</button>
+        <button id="random_vowel_unions">random vowel unions</button>
+        <div class="dropdown">
+          <span>By unions</span>
+          <div class="dropdown-content">
             <button id="random_k_unions">k-unions</button>
             <button id="random_s_unions">s-unions</button>
             <button id="random_t_unions">t-unions</button>
@@ -26,15 +29,29 @@
             <button id="random_y_unions">y-unions</button>
             <button id="random_r_unions">r-unions</button>
             <button id="random_w_unions">w-unions</button>
-          </charecter>
-        </buttons>
-        <card>
-          <character id="character">あ</character>
-          <translations id="translations">
+          </div>
+        </div>
+      </normal>
+      <!-- <charecter>
+            <button id="random_k_unions">k-unions</button>
+            <button id="random_s_unions">s-unions</button>
+            <button id="random_t_unions">t-unions</button>
+            <button id="random_n_unions">n-unions</button>
+            <button id="random_h_unions">h-unions</button>
+            <button id="random_m_unions">m-unions</button>
+            <button id="random_y_unions">y-unions</button>
+            <button id="random_r_unions">r-unions</button>
+            <button id="random_w_unions">w-unions</button>
+          </charecter> -->
+    </buttons>
+    <card>
+      <character id="character">あ</character>
+      <translations id="translations">
 
-          </translations>
-        </card>
-    </main>
-    <script src="/src/scripts/hiragana.js"></script>
-  </body>
+      </translations>
+    </card>
+  </main>
+  <script src="/src/scripts/hiragana.js"></script>
+</body>
+
 </html>

@@ -153,3 +153,36 @@ translation.learn {
     margin-right: auto;
     margin-top: 7rem;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: var(--primary-button);
+    /* background: linear-gradient(120deg, var(--primary-button), var(--accent)); */
+    border-radius: 1rem;
+    border: 0rem;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    padding: 1rem;
+    font-size:larger;
+    margin: 1rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-button);
+    border: var(--accent) 2px solid;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px 0px rgba(0,0,0,0.25);
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    /* padding: 12px 16px; */
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    width: 20rem;
+    margin-left: -8rem;
+    flex-flow: row wrap;
+  }
