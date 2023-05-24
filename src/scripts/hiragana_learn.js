@@ -136,8 +136,8 @@ next_btn.onclick = () => {
         case "b":
             getRandom(consonant_vowel_unions, "b");
             break;
-        case "any":
-            getRandom(consonant_vowel_unions, "b");
+        case "any":  
+            getRandom(hiragana, "any");
             break;
         case "k":
             getRandom(k_vowel_unions, "k");

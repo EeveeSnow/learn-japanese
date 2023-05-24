@@ -234,7 +234,27 @@ a.card {
     border-radius: 1rem;
     padding: .5rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
     background: var(--primary-button);
+}
+
+textarea {
+    resize: none;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 4rem;
+    height: 5rem;
+    text-align: center;
+    border: var(--accent) 2px solid;
+}
+textarea:focus-visible {
+    outline: var(--primary-button) 0px solid;
+}
+
+.mode_menu {
+    width: 15.5rem !important;
+    margin-left: -1rem !important;
 }
