@@ -258,7 +258,7 @@ document.addEventListener('click', async (e) => {
 });    
 
 document.addEventListener("keyup", function(event) {
-    if (event.code === 'Enter' || event.code === 'Go') {
+    if (event.keyCode === 13) {
         const text_box = document.getElementById('text_box');
         score_w += 1;
         if (hiragana[prew_character] + "\n" === text_box.value) {
