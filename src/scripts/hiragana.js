@@ -261,7 +261,7 @@ document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
         const text_box = document.getElementById('text_box');
         score_w += 1;
-        if (hiragana[prew_character] + "\n" === text_box.value) {
+        if (hiragana[prew_character] + "\n" === text_box.value.toLowerCase()) {
             console.log("AYAYA");
             updateCharacter();
             score.textContent = `${score_n} of ${score_w}`;
